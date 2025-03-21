@@ -8,6 +8,23 @@
     font-size: 20px;
 }
 
+.btn-send {
+    @include button;
+    width: 220px;
+    height: 40px;
+    font-size: 16px;
+
+    &:focus {
+        border: 1px solid $ceramic;
+        outline: 1px solid $ceramic;
+    }
+
+    &:disabled {
+        border: 1px solid $ui-disabled;
+        color: $ui-disabled;
+    }
+}
+
 @media screen and (min-width: 1200px) {
     .btn-default {
         &:hover {
@@ -20,6 +37,18 @@
             box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.4) inset;
             color: $dark;
             border: none;
+        }
+    }
+
+    .btn-send {
+        &:active {
+            border: 1px solid $ceramic;
+            outline: 1px solid $ceramic;
+        }
+
+        &:hover {
+            color: $ceramic;
+            border: 1px solid $ceramic;
         }
     }
 }
