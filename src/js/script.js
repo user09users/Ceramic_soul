@@ -6,6 +6,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import "/src/sass/style.scss";
 
+import burgerMenu from './burgerMenu';
+
 try {
     new Swiper('.swiper', {
         slidesPerView: 1,
@@ -32,4 +34,6 @@ try {
 
     });
 } catch (e) { }
+
+burgerMenu();
 
