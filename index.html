@@ -10,15 +10,15 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
-		rel="stylesheet" /> -->
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+		rel="stylesheet" />
 </head>
 
 <body>
 	<section class="promo">
 		<img src="/src/img/promo/potter.jpg" alt="potter" class="promo__potter" />
 		<div class="container">
-			<div class="header">
+			<header class="header">
 				<div class="header__menu">
 					<div class="header__menu-close">
 						<span></span>
@@ -47,7 +47,7 @@
 						<li><a href="#" class="header__link">about</a></li>
 					</ul>
 				</nav>
-			</div>
+			</header>
 			<div class="promo__wrapper">
 				<h1 class="title-h1-italic promo__title">
 					Make your dream come true<br />or decorate your home
@@ -119,10 +119,12 @@
 						<label class="touch__label" for="question">Your question</label>
 						<textarea class="touch__textarea" name="question" id="question" placeholder="Question"
 							required></textarea>
+						<div class="error-message"></div>
 
 						<label class="touch__label touch__check-block" for="checkbox">
 							<input required class="touch__checkbox" type="checkbox" id="checkbox" />
 							I agree with the <a href="#">terms</a></label>
+						<div class="checkbox-error-message"></div>
 
 						<button class="btn-send touch__btn">send request</button>
 					</form>
@@ -169,10 +171,13 @@
 						Keep up to date with news and promotions
 					</div>
 					<form action="#" class="footer__form">
-						<input placeholder="Enter your e-mail" type="email" class="footer__input" required />
+						<input placeholder="Enter your e-mail" type="email" class="footer__input" id="footer__email"
+							name="footer__email" required />
+						<div class="email-error-message"></div>
 						<label class="footer__check-block" for="footer__checkbox">
 							<input required class="footer__checkbox" type="checkbox" id="footer__checkbox" />
 							I agree with the <a href="#">terms</a></label>
+						<div class="check-error-message"></div>
 						<button class="btn-submit footer__form-btn">submit</button>
 					</form>
 				</div>

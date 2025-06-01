@@ -10,8 +10,8 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
@@ -112,10 +112,12 @@
                         <label class="touch__label" for="question">Your question</label>
                         <textarea class="touch__textarea" name="question" id="question" placeholder="Question"
                             required></textarea>
+                        <div class="error-message"></div>
 
                         <label class="touch__label touch__check-block" for="checkbox">
                             <input required class="touch__checkbox" type="checkbox" id="checkbox" />
                             I agree with the <a href="#">terms</a></label>
+                        <div class="checkbox-error-message"></div>
 
                         <button class="btn-send touch__btn">send request</button>
                     </form>
@@ -125,18 +127,19 @@
         </div>
     </section>
 
-    <section class="find">
+    <section class="findus">
         <div class="container">
             <h2 class="title-h2">find us</h2>
 
             <div class="findus__wrapper">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.473268302478!2d-73.95171882415616!3d40.729610571390985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593c58f8777d%3A0xe2215ac687bd7249!2sCLAY%20SPACE%20Ceramic%20Center!5e0!3m2!1sru!2sse!4v1744043182993!5m2!1sru!2sse"
-                    style="border:0;" allowfullscreen="" loading="lazy"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9877.220829724203!2d-73.95603920902691!3d40.72941561842177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2593c58f8777d%3A0xe2215ac687bd7249!2sCLAY%20SPACE%20Ceramic%20Center!5e1!3m2!1sen!2spt!4v1743715234137!5m2!1sen!2spt"
+                    style="border: 0" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
+
     <footer class="footer footer_spaced">
         <div class="container">
             <div class="footer__wrapper">
@@ -146,10 +149,13 @@
                         Keep up to date with news and promotions
                     </div>
                     <form action="#" class="footer__form">
-                        <input placeholder="Enter your e-mail" type="email" class="footer__input" required />
+                        <input placeholder="Enter your e-mail" type="email" class="footer__input" id="footer__email"
+                            name="footer__email" required />
+                        <div class="email-error-message"></div>
                         <label class="footer__check-block" for="footer__checkbox">
                             <input required class="footer__checkbox" type="checkbox" id="footer__checkbox" />
                             I agree with the <a href="#">terms</a></label>
+                        <div class="check-error-message"></div>
                         <button class="btn-submit footer__form-btn">submit</button>
                     </form>
                 </div>

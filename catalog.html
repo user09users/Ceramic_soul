@@ -10,14 +10,14 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!--     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
-        rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,400;0,500;1,400&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
     <section class="catalog">
         <div class="container">
-            <div class="header">
+            <header class="header">
                 <div class="header__menu">
                     <div class="header__menu-close">
                         <span></span>
@@ -46,7 +46,7 @@
                         <li><a href="#" class="header__link">about</a></li>
                     </ul>
                 </nav>
-            </div>
+            </header>
 
             <h1 class="title-h1 catalog__title">our pottery</h1>
 
@@ -146,10 +146,13 @@
                         Keep up to date with news and promotions
                     </div>
                     <form action="#" class="footer__form">
-                        <input placeholder="Enter your e-mail" type="email" class="footer__input" required />
+                        <input placeholder="Enter your e-mail" type="email" class="footer__input" id="footer__email"
+                            name="footer__email" required />
+                        <div class="email-error-message"></div>
                         <label class="footer__check-block" for="footer__checkbox">
                             <input required class="footer__checkbox" type="checkbox" id="footer__checkbox" />
                             I agree with the <a href="#">terms</a></label>
+                        <div class="check-error-message"></div>
                         <button class="btn-submit footer__form-btn">submit</button>
                     </form>
                 </div>
